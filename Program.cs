@@ -11,17 +11,16 @@ var sb = new StringBuilder();
 
 try
 {
-    // Validate Order Json Object
+    //Load Json Object 
     var orderJson = JsonLoader.ReadJson(FilePath.OrderPath);
-    var orderError = JValidator.IsValidJsonFormat(orderJson);
-
-    // Validate Product Json Object
     var productJson = JsonLoader.ReadJson(FilePath.ProductPath);
-    var productError = JValidator.IsValidJsonFormat(productJson);
-
-    //Validate Ingredients JsonObject
     var ingdJson = JsonLoader.ReadJson(FilePath.IngredientsPath);
+    
+    // Validate Order Json Object
+    var orderError = JValidator.IsValidJsonFormat(orderJson);
+    var productError = JValidator.IsValidJsonFormat(productJson);
     var ingdError = JValidator.IsValidJsonFormat(ingdJson);
+
     if (orderError.Count() == 0 && productError.Count() == 0 && ingdError.Count() == 0)
     {
         // Load JSON data

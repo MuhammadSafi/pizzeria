@@ -15,7 +15,6 @@ namespace pizzeria.Validation
             if (order.DeliveryAt < order.CreatedAt) return false;
             return true;
         }
-
         public static bool IsValidProduct(Product product, Dictionary<string, List<Ingredient>> ingredientDict)
         {
             if (string.IsNullOrWhiteSpace(product.ProductId)) return false;
@@ -25,7 +24,6 @@ namespace pizzeria.Validation
 
             return true;
         }
-
         public static bool IsValidIngredient(Ingredient ingredient)
         {
             if (string.IsNullOrWhiteSpace(ingredient.Name)) return false;

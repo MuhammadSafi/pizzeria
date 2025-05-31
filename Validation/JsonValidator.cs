@@ -12,11 +12,7 @@ namespace pizzeria.Validation
             validationErrors = new List<Response>();
             var validationErrorsLst = (List<Response>)validationErrors;
             var jsonObject = JArray.Parse("[]");
-            //if (jsonObject.Count == 0)
-            //{
-
-            //    validationErrorsLst.Add(new Response { ResponseCode = ResponseCodes.JsonObjError, ResponseDescription = string.Format("{0}-{1}", ResponseDescription.JsonObjError) });
-            //}
+           
             try
             {
                 jsonObject = JArray.Parse(json);

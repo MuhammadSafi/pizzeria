@@ -11,10 +11,10 @@ namespace pizzeria.Business
             var productDict = products.ToDictionary(p => p.ProductId, p => p);
             var ingredientDict = ingredients.ToDictionary(p => p.ProductId, p => p.Ingredients);
 
-            Console.WriteLine($" ---------------------INVALID ORDER---------------------------------------\n");
-
+            Console.WriteLine($" -------------------------- INVALID ORDER -------------------------------\n");
+            Console.WriteLine($" /////////////////////////////////////////////////////////////////////////\n");
             Console.WriteLine($"{invalidOrders}\n");
-
+            Console.WriteLine($" /////////////////////////////////////////////////////////////////////////\n");
             Console.WriteLine($"--------------------------END---------------------------------------------\n");
 
             Console.WriteLine($"----------------------VALID ORDER SUMMARY---------------------------------\n");
