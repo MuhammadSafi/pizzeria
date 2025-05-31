@@ -15,7 +15,7 @@ try
     var orderJson = JsonLoader.ReadJson(FilePath.OrderPath);
     var productJson = JsonLoader.ReadJson(FilePath.ProductPath);
     var ingdJson = JsonLoader.ReadJson(FilePath.IngredientsPath);
-    
+
     // Validate Order Json Object
     var orderError = JValidator.IsValidJsonFormat(orderJson);
     var productError = JValidator.IsValidJsonFormat(productJson);
@@ -75,7 +75,8 @@ try
         }
 
         //Processing Order it it has all valid oders ,products and ingredients
-        OrderProcessor.PrintOrderSummaries(refineOrders?.orders, validProducts, ingredients, refineOrders?.InvalidOrderId.ToString());
+        var processor = new OrderProcessor();
+        processor.PrintOrderSummaries(refineOrders?.orders, validProducts, ingredients, refineOrders?.InvalidOrderId.ToString());
     }
     else
     {

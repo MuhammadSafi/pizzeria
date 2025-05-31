@@ -2,9 +2,9 @@
 
 namespace pizzeria.Business
 {
-    public static class OrderProcessor
+    public class OrderProcessor
     {
-        public static void PrintOrderSummaries(List<Order> orders, List<Product> products, List<ProductIngredient> ingredients,string invalidOrders)
+        public void PrintOrderSummaries(List<Order> orders, List<Product> products, List<ProductIngredient> ingredients, string invalidOrders)
         {
             // Convert  list to dictionary for fast lookup
             var groupedOrders = orders.GroupBy(o => o.OrderId);
@@ -31,10 +31,10 @@ namespace pizzeria.Business
                     sumofIngredients += ingrdients.Sum(a => a.Amount * item.Quantity); // if Product Quantity is more than 1 than ingredients amount  will be X by Product quantity
 
                 }
-                
+
                 Console.WriteLine($" - Order ID: {orderGroup.Select(a => a.OrderId).FirstOrDefault()},Total Price:{totalPrice}");
                 Console.WriteLine($" - Order ID: {orderGroup.Select(a => a.OrderId).FirstOrDefault()},Ingredient Required:{sumofIngredients}");
-                
+
             }
 
             Console.WriteLine($"\n--------------------------END---------------------------------------------\n");
