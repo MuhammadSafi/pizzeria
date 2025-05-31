@@ -1,0 +1,20 @@
+﻿[
+  {
+    "ProductId": "PZ001",
+    "ProductName": "Test1",
+    "Price": 10.00
+
+  },
+  {
+    "ProductId": "PZ002",
+    "ProductName": "Test2",
+    "Price": 20.00
+
+  },
+  {
+
+    "ProductId": "PZ003",
+    "ProductName": "Test3",
+    "Price": 30.00
+  }
+]

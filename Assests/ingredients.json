@@ -1,0 +1,79 @@
+﻿[
+  {
+    "ProductId": "PZ001",
+    "Ingredients": [
+      {
+        "Name": "Dough",
+        "Amount": 0.25
+      },
+      {
+        "Name": "Cheese",
+        "Amount": 0.5
+      },
+      {
+        "Name": "Tomato Sauce",
+        "Amount": 0.75
+      },
+      {
+        "Name": "Bread",
+        "Amount": 1
+      },
+      {
+        "Name": "Vegetables",
+        "Amount": 0.25
+      }
+    ]
+  },
+  {
+    "ProductId": "PZ002",
+    "Ingredients": [
+      {
+        "Name": "Dough",
+        "Amount": 0.25
+      },
+      {
+        "Name": "Cheese",
+        "Amount": 0.5
+      },
+      {
+        "Name": "Tomato Sauce",
+        "Amount": 0.75
+      },
+      {
+        "Name": "Bread",
+        "Amount": 1
+      },
+      {
+        "Name": "Beef",
+        "Amount": 0.25
+      }
+
+    ]
+  },
+  {
+    "ProductId": "PZ003",
+    "Ingredients": [
+      {
+        "Name": "Dough",
+        "Amount": 0.25
+      },
+      {
+        "Name": "Cheese",
+        "Amount": 0.5
+      },
+      {
+        "Name": "Tomato Sauce",
+        "Amount": 0.75
+      },
+      {
+        "Name": "Bread",
+        "Amount": 1
+      },
+      {
+        "Name": "Chicken",
+        "Amount": 0.25
+      }
+    ]
+  }
+
+]
